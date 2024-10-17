@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./main.js" defer></script>
+  <title>Frontend Mentor | Interactive card details form</title>
+  <style>
+    .attribution { font-size: 14px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="card-area">
+    <div class="card-front">
+      <div class="circles">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+      </div>
+      <div class="card-details">
+        <p class="card-number">0000 0000 0000 0000</p>
+        <div class="card-name-expiry">
+          <p class="card-name">JANE APPLESEED</p>
+          <p class="card-expiry"><span class="card-expiry-month">00</span>/<span class="card-expiry-year">00</span></p>
+        </div>
+      </div>  
+    </div>
+    <div class="card-back">
+      <p class="card-cvc">000</p>
+    </div>
+  </div>
+  <div class="input-area-div">
+    <div class="input-area">
+      <div class="name-number-divs name-number-div1">
+        <label class="input-labels" for="name-input">CARDHOLDER NAME</label>
+        <input class="name-input" type="text" placeholder="e.g. Jane Appleseed" maxlength="26">
+        <div class="name-error">
+
+        </div>
+      </div>
+      <div class="name-number-divs name-number-div2">
+        <label class="input-labels" for="number-input">CARD NUMBER</label>
+        <input class="number-input" type="text" placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
+        <div class="number-error">
+
+        </div>
+      </div>
+      <div class="expiry-cvc">
+        <div class="expiry-input-area">
+          <label for="expiry-month-input">EXP. DATE (MM/YY)</label>
+          <div class="expiry-inputs">
+            <input class="expiry-month-input" type="text" placeholder="MM" maxlength="2">
+            <input class="expiry-year-input" type="text" placeholder="YY" maxlength="2">
+          </div>
+        </div>
+        <div class="cvc-input-area">
+          <label for="cvc-input">CVC</label>
+          <input class="cvc-input" type="text" placeholder="e.g. 123" maxlength="3">
+        </div>
+      </div>
+      <div class="expiry-cvc-errors">
+        <div class="expiry-error">
+
+        </div>
+        <div class="cvc-error">
+
+        </div>
+      </div>
+      <button class="confirm-button" onclick="isInputValid()">Confirm</button>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/alexanderherta" target="_blank">Alexander Herta</a>.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
